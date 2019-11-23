@@ -1,0 +1,25 @@
+function getNthFib(n){
+  if(n === 1) return 0
+  let fibArr = [0,1]
+  let i = 3
+  while(i <= n){
+  let sum = fibArr[0] + fibArr[1]
+  fibArr[0] = fibArr[1]
+  fibArr[1] = sum
+  i++
+  } 
+  return fibArr[1]
+}
+
+
+if(n === 1) return 0
+
+let fibArr = [0,1]
+let i = 3
+while(i <= n){
+  let sum = fibArr[0] + fibArr[1]
+  fibArr[0] = fibArr[1]
+  fibArr[1] = sum
+}
+
+return fibArr[1]
